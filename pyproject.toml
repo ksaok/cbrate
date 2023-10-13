@@ -5,7 +5,9 @@ description = "Get currency rates from cbr.ru"
 authors = [
     {name = "Sergey Bryukhovskikh", email = "ksaok@ereb.ru"},
 ]
-dependencies = []
+dependencies = [
+    "requests>=2.31.0",
+]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,3 +15,8 @@ license = {text = "MIT"}
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.16.1",
+]
